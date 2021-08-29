@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+}
+.sections {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    font-family: Montserrat;
+}
+/*Navbar*/
+.text-uppercase {
+    text-transform: uppercase;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+
+}
+nav {
+    font-family: Montserrat;
+    background-color: #2C3E50;
+    color: black;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    position: fixed;
+    width: 100%;
+    z-index: 500;
+}
+a {
+    text-decoration: none;
+}
+.img-fluid {
+    width: 30%;
+    height: auto;
+}
+
+.contanier {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+@media (min-width:576px){
+    .contanier {
+        max-width: 540px;
+    }
+    html {
+        font-size:4px;
+    }
+    .col {
+        width: 100%;
+}
+}
+@media (min-width:820px){
+    .contanier{
+        max-width: 780px;
+    }
+    html {
+        font-size:6px;
+    }
+    .col {
+        width: 50%;
+    }
+}
+@media (min-width:1140px){
+    .contanier  {
+        max-width: 1090px;
+    }
+    html {
+        font-size:7px;
+    }
+    .col {
+        width: 33.3333%;
+    }
+}
+.logo-box .logo {
+    color: white;
+    font-weight: 700;
+    font-size: 3.2rem;
+}
+.logo-box {
+    float: left;
+    padding-top: 5px;
+}
+/*Nav-Links*/
+#nav-links {
+    float: right;
+}
+#nav-links li {
+    float: left;
+    margin: .4rem;
+}
+ul {
+    list-style-type: none;
+}
+#nav-links .nav-link {
+    color: #fff;
+    display: block;
+    letter-spacing: .1rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 1.6rem;
+    transition: color .3s;
+}
+#nav-links .nav-link:hover {
+    color: #18bc9c;
+}
+/*header*/
+header {
+    background-color: #18BC9C;
+    padding-top: calc(122px + 10rem);
+    padding-bottom: 122px;
+    text-align: center;
+}
+header h1 {
+    text-decoration: none;
+    color: #fff;
+    font-size: 7.6rem;
+}
+header h2 {
+    color: white;
+    font-size: 5.0rem;
+    letter-spacing: .1rem;
+    text-align: center;
+    font-family: 'Lato';
+}
+.star-light {
+    padding-top: .3rem;
+    border: none;
+    border-top: .4rem solid #fff;
+    max-width: 99rem;
+    margin: 2.5rem auto;
+    overflow: visible;
+}
+
+.star-light::after {
+    content: "\f005";
+    font-family: "Font Awesome 5 Free";
+    color: white;
+    font-weight: 900;
+    font-size: 3.2rem;
+    position: relative;
+    top: -26px;
+    background-color: #18BC9c;
+    padding-right: 2.0rem;
+    padding-left: 2.0rem;
+}
+/*Resume*/
+#resume {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    text-align: center;
+}
+#resume h2 {
+    font-size: 5.0rem;
+    font-family: Montserrat;
+    letter-spacing: 2.0rem;
+    color: #2c3e50;
+    padding-bottom: 2.4rem;
+}
+.star-dark {
+    border: none;
+    max-width: 99rem;
+    margin: 2.5rem auto;
+    overflow: visible;
+    border-top: .4rem solid #2c3e50;
+}
+.star-dark::after {
+    content: "\f005";
+    font-family: "Font Awesome 5 Free";
+    color: #2c3e50;
+    font-weight: 900;
+    font-size: 3.2rem;
+    position: relative;
+    top: -26px;
+    background: #fff;
+    padding-right: 2.0rem;
+    padding-left: 2.0rem;
+}
+.col {
+    float: left;
+    width: 50%;
+    padding: 1rem;
+}
+.col .exercises-item a img {
+    width: 100%;
+    height: auto;
+}
+.exercises-item img {
+    display: block;
+}
+.exercises-item {
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #18BC9C;
+    opacity: 0;
+    transition: opacity .5s ease;
+
+}
+.overlay .img-icon {
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.exercises-item:hover .overlay {
+    opacity: 0.6;
+}
+/*About*/
+#about {
+    background-color: #18BC9C;
+    color: white;
+    text-align: center;
+    height: 600px;
+}
+#about h2 {
+    color: white;
+    font-size: 5.0rem;
+    letter-spacing: .1rem;
+    text-align: center;
+    font-family: 'Lato';
+}
+.about-text p {
+    font-size:2.3rem;
+    text-align: center;
+    padding-top:5.5rem;
+    padding-bottom: 9.0rem;
+}
+.button a {
+    padding:30px;
+    border-radius: 4px;
+    border:4px solid #fff;
+    font-size:3.5rem;
+    text-align: center;
+    text-decoration: none;
+    color:white;
+    transition: color,background 0.5s;
+}
+.button a:hover{
+    color:black;
+    background: #fff;
+}
+.button i{
+   font-size:4rem;
+    padding-right: 1.4rem;
+}
+/*Contact*/
+#contact {
+    text-align: center;
+}
+#contact h2 {
+    text-align: center;
+    font-size: 5.0rem;
+    font-family: Montserrat;
+    letter-spacing: 2.0rem;
+    color: #2c3e50;
+    padding-bottom: 2.4rem;
+}
+.contact-form {
+    width: 100%;
+    margin:0 auto;
+}
+.form-group {
+    border-bottom:1px solid #e9ecef;
+    padding-bottom: 1rem;
+    margin-bottom: 4rem;
+}
+.form-group input,.form-group textarea {
+    border:none;
+    width: 100%;
+    display:block;
+    font-size:2.0rem;
+    font-weight: 700;
+    font-family: "Lato";
+}
+.form-group input:focus {
+    outline: 0; /*İnputtaki focus olunca çıkan kenarları kapatır.*/
+}
+.form-group textarea:focus {
+    outline: 0;
+}
+button {
+    font-size:2.0rem;
+    font-weight: 700;
+    border-radius: 7px;
+    padding-top:2.0rem;
+    padding-bottom: 2.0rem;
+    padding-left:5rem;
+    padding-right: 5rem;
+    background-color:#18BC9c;
+    color:white;
+    border-color: white;
+    transition: opacity .3s;
+}
+button:hover{
+    opacity: 0.75;
+}
+/*Footer*/
+#footer {
+    width:100%;
+    padding-top:6rem;
+    padding-bottom: 6rem;
+    background-color:#2C3E50;
+    color:white;
+    text-align: center;
+}
+#footer .col{
+    width: 33%;
+}
+#footer h4{
+    font-size:2.5rem;
+    font-weight: 700;
+}
+.location-text {
+    padding-top:1.5rem;
+    font-size: 1.8rem;
+}
+#footer-icons {
+    line-height: 2rem;
+    font-size: 2rem;
+    float:left;
+    margin-left:2.8rem;
+    width: 5%;
+    height: 5%;
+    background-color:#2C3E50;
+    border:none;
+    color:white;
+}
+#footer-x {
+    text-align: center;
+    width: 100%;
+    height: 2.5rem;
+    background-color:black;
+    color:white;
+}
+#footer-x p {
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
+}
